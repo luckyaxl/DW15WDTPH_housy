@@ -18,7 +18,7 @@ const reducer = (state = initialState, action) => {
     case `${GET_HOUSE_LIST}_FULFILLED`:
       return {
         ...state,
-        data: action.payload.data,
+        data: action?.payload?.data,
         loading: false
       };
     case `${GET_HOUSE_OWNER}_REJECTED`:
